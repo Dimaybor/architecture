@@ -567,20 +567,41 @@ h2 {
     &__button {
       position: relative;
       height: 71px;
+      width: 222px;
 
       & .main-link {
+        padding-right: 40px;
+        font-size: 12px;
+        line-height: 12px;
+        font-weight: 400;
+        letter-spacing: 0.2em;
+        border-color: transparent;
+        text-transform: uppercase;
         background-color: #333333;
         color: #fff;
+        cursor: pointer;
+
       }
 
-      & .arrow-link {
-        color: #fff;
-      }
     }
 
     &__consent {
+      margin-bottom: 21px;
       padding-left: 40px;
       color: #333333;
+    }
+
+    & .arrow-link {
+      color: #fff;
+
+      &::before {
+        z-index: 1;
+        border-color: #fff;
+      }
+  
+      &::after {
+        background-color: #fff;
+      }
     }
   }
 }
