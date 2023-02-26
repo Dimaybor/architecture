@@ -494,11 +494,16 @@ h2 {
 }
 
 .contacts {
+  padding-bottom: 120px;
   h2 {
     margin-bottom: 22px;
   }
   &-inner {
     display: flex;
+  }
+
+  &-col + &-photo {
+    margin-left: 30px;
   }
 
   &-form {
@@ -602,6 +607,35 @@ h2 {
       &::after {
         background-color: #fff;
       }
+    }
+  }
+}
+
+.main-footer {
+  padding-top: 58px;
+  min-height: 417px;
+  background-color: #2C2C2C;
+
+  &__container {
+    display: flex;
+    width: 100%;
+  }
+
+  &__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-width: 1px 0 0;
+
+    p {
+      font-size: 12px;
+      line-height: 22px;
+      color: rgba(200, 200, 200, 0.5);
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
     }
   }
 }
