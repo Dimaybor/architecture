@@ -612,13 +612,51 @@ h2 {
 }
 
 .main-footer {
-  padding-top: 58px;
   min-height: 417px;
   background-color: #2C2C2C;
 
   &__container {
+    padding: 58px 0 60px;
     display: flex;
+    justify-content: space-between;
     width: 100%;
+    min-height: 347px;
+  }
+
+  &__header {
+    font-size: 16px;
+    line-height: 20px;
+
+    & + ul {
+      margin-top: 25px;
+    }
+  }
+
+  &__list {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    a {
+      display: block;
+      color: #fff;
+    }
+  }
+
+  &__item {
+    & + & {
+      margin-top: 16px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 184px;
+
+    // & .main-footer__item {
+    //   display: flex;
+    // }
   }
 
   &__copyright {
