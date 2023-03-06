@@ -643,9 +643,31 @@ h2 {
   }
 
   &__item {
+    display: flex;
+    align-items: center;
+
+    a {
+      margin-left: 19px;
+    }
+
     & + & {
       margin-top: 16px;
     }
+  }
+
+  &__pin {
+    width: 11px;
+    height: 16px;
+  }
+
+  &__phone {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__mail {
+    width: 16px;
+    height: 11px;
   }
 
   &__contacts {
@@ -653,10 +675,32 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     height: 184px;
+  }
 
-    // & .main-footer__item {
-    //   display: flex;
-    // }
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    width: 186px;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg:hover #facebook{
+        fill: #0165E1;
+      }
+      svg:hover #twitter{
+        fill: #00acee;
+      }
+      svg:hover #linkedin{
+        fill: #0077b5;
+      }
+      svg:hover #pinterest{
+        fill: #E60023;
+      }
+    }
   }
 
   &__copyright {
