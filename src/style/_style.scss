@@ -269,11 +269,11 @@ h2 {
   background-color: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
-  border: 1px solid #fff;
+  border: 1px solid #F2F2F2;
 
   &:hover {
-    border: 1px solid #BDBDBD;
-    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    background-color: #F9F9F9;
   }
 
   &::before {
@@ -438,6 +438,7 @@ h2 {
   .main-link {
     bottom: 25px;
     left: 78px;
+    width: 140px;
     background-color: transparent;
   }
   .arrow-link {
@@ -486,6 +487,11 @@ h2 {
       visibility: visible;
       transform: scale(1);
       animation: appearance 0.4s;
+    }
+
+    &:nth-child(3) .project-list__link{
+      padding-right: 32px;
+      padding-left: 25px;
     }
   }
   &__text {
