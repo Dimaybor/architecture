@@ -132,13 +132,16 @@ h2 {
       display: flex;
       width: 100%;
       max-width: 100%;
+      min-width: 0;
     }
 
     &__item {
 
       &:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 34.18803418803419%;
-        padding-top: 333px;
       }
 
       &:last-child {
@@ -159,11 +162,40 @@ h2 {
   
     &__buttons {
       display: flex;
-      margin-top: 90px;
     }
 
   }
 
+}
+
+.main-slider {
+  position: relative;
+  width: 1170px;
+  height: 829px;
+
+  &__nav {
+    z-index: 2;
+    position: absolute;
+    bottom: 27.14113389626055%;
+    left: 0;
+    width: 400px;
+  }
+
+  .swiper-pagination {
+    top: 95px;
+    left: 0;
+    font-size: 24px;
+    line-height: 24px;
+    color: #BDBDBD;
+    text-align: left;
+  }
+  .swiper-pagination-total {
+    margin: 0 0 0 44px;
+  }
+
+  .swiper-pagination-current {
+    margin: 0 44px 0 0;
+  }
 }
 
 .main-link {
@@ -241,6 +273,7 @@ h2 {
 
   &:hover {
     border: 1px solid #BDBDBD;
+    background-color: #F2F2F2;
   }
 
   &::before {
@@ -275,49 +308,23 @@ h2 {
   }
 }
 
-.project-list {
-  position: relative;
-  display: flex;
-  margin-top: 94px;
-  font-size: 24px;
-  line-height: 24px;
-  color: #BDBDBD;
-
-  &__item {
-    cursor: pointer;
-
-  &:first-child {
-    &::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 70px;
-      width: 2px;
-      height: 43.82px;
-      transform: translate(-50%, -50%) rotate(45deg);
-      background-color: #E0E0E0;
-      cursor: default;
-    }
-  }
-
-    & + & {
-      margin-left: 88.92px;
-    }
-  }
-}
-
 .about {
 
   &-company {
     display: flex;
-    padding: 0 70px 0 100px;
+    padding: 30px 70px 30px 100px;
     width: 100%;
+    background-color: #FBFBFB;
   }
 
   &-text {
     position: relative;
     width: 500px;
     padding-left: 30px;
+
+    .main-link {
+      left: 30px;
+    }
 
     h2 {
       margin-bottom: 20px;
@@ -369,16 +376,25 @@ h2 {
 
     p {
       width: 50%;
-      padding-left: 134px;
       font-size: 22px;
       line-height: 36px;
       font-weight: 300;
       color: #333333;
-
-      &:first-child {
-        padding-right: 203px;
-      }
     }
+
+    &--p {
+      padding-right: 187px;
+    }
+  }
+
+  &__count {
+    margin-right: 30px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 200px;
+    line-height: 144px;
+    color: #F2F2F2;
   }
 }
 
@@ -543,6 +559,7 @@ h2 {
       border: 1px solid transparent;
       padding: 14px 14px 14px 21px;
       outline: none;
+      background-color: #F3F3F3;
 
       &:focus {
         border-color: #BDBDBD;
