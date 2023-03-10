@@ -8,7 +8,7 @@
   <link rel="icon" href="assets/icon.png" type="image/png">
   
   <title>Dijital project</title>
-<script defer src="main.e499d717f346e5739051.js"></script></head>
+<script defer src="main.b48191b871265b2243cb.js"></script></head>
 <body>
   <header class="main-header">
     <div class="wrapper">
@@ -24,7 +24,7 @@
               <a class="main-menu__link" href="index.html">Головна</a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link" href="index.html">Галерея</a>
+              <a class="main-menu__link" href="gallery.html">Галерея</a>
             </li>
             <li class="main-menu__item">
               <a class="main-menu__link" href="index.html">Проекти</a>
@@ -190,11 +190,18 @@
                   <label for="text" class="contacts-form__label">Товар/послуга, що цікавить</label>
                 </div>
                 <div class="contacts-form__placeholder">
-                  <img src="assets/check.svg" alt="chek" class="contacts-form__check">
                   <textarea id="message" class="contacts-form__item" name="message" required></textarea>
                   <label for="message" class="contacts-form__label">Повідомлення<span>*</span></label>
                 </div>
-                <p class="contacts-form__consent">Надсилаючи заявку Ви погоджуєтесь з політикою конфіденційності</p>
+                <div class="contacts-form__consent">
+                  <label>
+                    <input class="checkbox" type="checkbox" name="consent">
+                    <span class="checkbox-custom">
+                      <span class="check-mark"></span>
+                    </span>
+                    <span class="label">Надсилаючи заявку Ви погоджуєтесь з політикою конфіденційності</span>
+                  </label>
+                  </div>
                 <div class="contacts-form__button arrow-link">
                   <input type="submit" value="надіслати" class="main-link">
                 </div>
