@@ -190,11 +190,18 @@
                   <label for="text" class="contacts-form__label">Товар/послуга, що цікавить</label>
                 </div>
                 <div class="contacts-form__placeholder">
-                  <img src="img/check.svg" alt="chek" class="contacts-form__check">
                   <textarea id="message" class="contacts-form__item" name="message" required></textarea>
                   <label for="message" class="contacts-form__label">Повідомлення<span>*</span></label>
                 </div>
-                <p class="contacts-form__consent">Надсилаючи заявку Ви погоджуєтесь з політикою конфіденційності</p>
+                <div class="contacts-form__consent">
+                  <label>
+                    <input class="checkbox" type="checkbox" name="consent">
+                    <span class="checkbox-custom">
+                      <span class="check-mark"></span>
+                    </span>
+                    <span class="label">Надсилаючи заявку Ви погоджуєтесь з політикою конфіденційності</span>
+                  </label>
+                  </div>
                 <div class="contacts-form__button arrow-link">
                   <input type="submit" value="надіслати" class="main-link">
                 </div>
