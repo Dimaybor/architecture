@@ -1,4 +1,8 @@
 import './index.html';
+import './gallery.html';
+import './projects.html';
+import './certificates.html';
+import './contacts.html';
 import './index.scss';
 // import Swiper bundle with all modules installed
 import Swiper from 'swiper/bundle';

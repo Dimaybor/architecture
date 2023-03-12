@@ -27,6 +27,22 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'index.html'),
     }),
+    new HtmlWebpackPlugin({ 
+      filename: 'gallery.html',
+      template: 'src/gallery.html'
+    }),
+    new HtmlWebpackPlugin({ 
+      filename: 'projects.html',
+      template: 'src/projects.html'
+    }),
+    new HtmlWebpackPlugin({ 
+      filename: 'certificates.html',
+      template: 'src/certificates.html'
+    }),
+    new HtmlWebpackPlugin({ 
+      filename: 'contacts.html',
+      template: 'src/contacts.html'
+    }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
     }),
