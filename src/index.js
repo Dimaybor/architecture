@@ -34,3 +34,27 @@ const swiper = new Swiper('.main-slider', {
     }
   },
 });
+
+const swiper2 = new Swiper('.gallery-slider', {
+  navigation: {
+    nextEl: '.slider-button-next',
+    prevEl: '.slider-button-prev',
+  },
+
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  speed: 700,
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+    formatFractionCurrent: function (number) {
+      return ('0' + number).slice(-2);
+    },
+      formatFractionTotal: function (number) {
+      return ('0' + number).slice(-2);
+    }
+  },
+});
