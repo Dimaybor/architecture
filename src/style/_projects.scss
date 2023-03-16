@@ -1,0 +1,52 @@
+.design {
+  &-item {
+    display: flex;
+
+    & + & {
+      margin-top: 60px;
+    }
+
+    &__photo {
+      width: 670px;
+      height: 435px;
+    }
+
+    &__text {
+      position: relative;
+      width: 500px;
+      background-color: #FBFBFB;
+      padding: 30px;
+
+      & .main-link {
+        left: 30px;
+        bottom: 30px;
+      }
+
+      h3 {
+        margin-bottom: 20px;
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 300;
+        color: #bdbdbd;
+      }
+      p {
+        padding-right: 40px;
+      }
+    }
+  }
+}
+
+.project-slider {
+  width: 1170px;
+  height: 1657px;
+
+  &__nav {
+    z-index: 2;
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    height: 53px;
+    width: 100%;
+    padding-left: 169px;
+  }
+}

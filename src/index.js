@@ -1,6 +1,7 @@
 import './index.html';
 import './gallery.html';
 import './projects.html';
+import './projects-article.html';
 import './certificates.html';
 import './contacts.html';
 import './index.scss';
@@ -46,6 +47,32 @@ const swiper2 = new Swiper('.gallery-slider', {
     crossFade: true
   },
   speed: 700,
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+    formatFractionCurrent: function (number) {
+      return ('0' + number).slice(-2);
+    },
+      formatFractionTotal: function (number) {
+      return ('0' + number).slice(-2);
+    }
+  },
+});
+
+const swiper3 = new Swiper('.project-slider', {
+  navigation: {
+    nextEl: '.slider-button-next',
+    prevEl: '.slider-button-prev',
+  },
+
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  speed: 700,
+  noSwiping: true,
+  noSwipingClass: 'swiper-slide',
 
   pagination: {
     el: '.swiper-pagination',
