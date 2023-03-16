@@ -3,17 +3,6 @@
   &-slider {
     width: 1170px;
     height: 783px;
-
-    &__nav {
-      z-index: 2;
-      position: absolute;
-      bottom: 120px;
-      left: 0;
-      height: 53px;
-      width: 100%;
-      padding-left: 169px;
-    }
-
   }
 
   &-list {

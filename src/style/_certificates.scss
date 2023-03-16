@@ -1,0 +1,23 @@
+.certificates {
+  .header-indent::after {
+    display: none;
+  }
+
+  &-slider {
+    width: 1170px;
+    height: 672px;
+
+    & .general-slider-nav {
+      left: 73%
+    }
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      line-height: 0;
+    }
+  }
+}

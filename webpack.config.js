@@ -36,6 +36,10 @@ module.exports = {
       template: 'src/projects.html'
     }),
     new HtmlWebpackPlugin({ 
+      filename: 'projects-article.html',
+      template: 'src/projects-article.html'
+    }),
+    new HtmlWebpackPlugin({ 
       filename: 'certificates.html',
       template: 'src/certificates.html'
     }),

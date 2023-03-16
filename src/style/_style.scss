@@ -90,6 +90,16 @@ h2 {
     display: flex;
   }
 
+  .general-slider-nav {
+    z-index: 2;
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    height: 53px;
+    width: 100%;
+    padding-left: 169px;
+  }
+
   .general-pagination {
     top: 50%;
     left: 0;
