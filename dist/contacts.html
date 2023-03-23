@@ -8,7 +8,7 @@
   <link rel="icon" href="assets/icon.png" type="image/png">
   
   <title>Dijital project</title>
-<script defer src="main.119d7ef538b04ff5e358.js"></script></head>
+<script defer src="main.a51b41362303d86a5882.js"></script></head>
 <body>
   <header class="main-header">
     <div class="wrapper">
@@ -43,7 +43,72 @@
   <main class="site-content">
     <div class="wrapper">
       <section class="connection">
-        <h1 class="header-indent">контактна <br><span>інформація</span></h1>
+        <div class="connection-text">
+          <h1 class="header-indent">контактна <br><span>інформація</span></h1>
+          <p class="connection-text__item">
+            <span>«Digital Project»</span><br> вулиця Саперне Поле, 14/55, Київ
+          </p>
+          <p class="connection-text__item">
+            <span><a href="tel:+380976397666">+38 (097) 63 97 666</a></span>
+          </p>
+          <p class="connection-text__item"><a href="mailto:dimayboroda@gmail.com">dimayboroda@gmail.com</a></p>
+          <button id="myBtn" class="main-link">
+            зворотній зв'язок
+          </button>
+          <div id="myModal" class="connection-modal">
+            <div class="connection-modal__content">
+              <div class="connection-modal__header">
+                <h3>Задати питання</h3>
+                <span class="connection-modal__close"></span>
+              </div>
+              <div class="connection-modal__form">
+                <form action="#" method="post">
+                  <fieldset class="contacts-form">
+                    <div class="contacts-form__placeholder">
+                      <input id="name" class="contacts-form__item" type="text" autocomplete="on" name="name" required>
+                      <label for="name" class="contacts-form__label">Ім'я</label>
+                    </div>
+                    <div class="contacts-form__placeholder">
+                      <input id="number" class="contacts-form__item"  type="tel" autocomplete="on" name="number" required>
+                      <label for="number" class="contacts-form__label">Номер телефону<span>*</span></label>
+                    </div>
+                    <div class="contacts-form__placeholder">
+                      <input id="email" class="contacts-form__item" type="email" name="email" autocomplete="on" required>
+                      <label for="email" class="contacts-form__label">E-mail<span>*</span></label>
+                    </div>
+                    <div class="contacts-form__placeholder">
+                      <input id="text" class="contacts-form__item" type="text" name="text" required>
+                      <label for="text" class="contacts-form__label">Товар/послуга, що цікавить</label>
+                    </div>
+                    <div class="contacts-form__placeholder">
+                      <textarea id="message" class="contacts-form__item" name="message" required></textarea>
+                      <label for="message" class="contacts-form__label">Повідомлення<span>*</span></label>
+                    </div>
+                    <div class="contacts-form__consent">
+                      <label>
+                        <input class="checkbox" type="checkbox" name="consent">
+                        <span class="checkbox-custom">
+                          <span class="check-mark"></span>
+                        </span>
+                        <span class="label">Надсилаючи заявку Ви погоджуєтесь з політикою конфіденційності</span>
+                      </label>
+                      </div>
+                    <div class="contacts-form__button">
+                      <input type="submit" value="надіслати" class="main-link main-link--long">
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="connection-map">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe width="790" height="501" id="gmap_canvas" src="https://maps.google.com/maps?q=вулиця Саперне Поле, 14/55, Київ, 02000&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:501px;width:790px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:501px;width:790px;}</style>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </main>
