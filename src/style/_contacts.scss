@@ -78,7 +78,7 @@
       padding: 26px 39px 28px;
       transform: translate(-50%, -50%);
       animation-name: animateOpacity;
-      animation-duration: 0.4s
+      animation-duration: 0.4s;
     }
 
     &__header {
@@ -90,6 +90,70 @@
       h3 {
         width: 100%;
       }
+    }
+
+    &__confirmBtn {
+      width: 100%;
+      height: 42px;
+      margin-bottom: 23px;
+      padding: 0 62px;
+
+      & .main-link {
+        position: relative;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.2em;
+        border-color: transparent;
+      }
+    }
+
+    &__confirmed {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      top: 50%;
+      left: 50%;
+      max-width: 516px;
+      width: 100%;
+      animation-name: animateOpacity;
+      animation-duration: 0.4s;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+      img {
+        display: block;
+        width: 142px;
+        height: 142px;
+        margin: 0 auto 24px;
+      }
+
+      p {
+        margin-bottom: 27px;
+        font-size: 24px;
+        line-height: 26px;
+        font-weight: 700; 
+        color: #333333;
+       
+      }
+
+      & .connection-modal__header {
+        display: flex;
+        justify-content: flex-end;
+        height: 52px;
+        width: 100%;
+        margin: 0;
+        padding: 22px 16px 0 0;
+      }
+    }
+
+    &__text {
+      display: block;
+      margin-bottom: 41px;
+      padding: 0 45px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      color: #4F4F4F;
+
     }
 
     &__close {
@@ -144,7 +208,6 @@
       to {opacity:1}
     }
   }
-
 
 }
 

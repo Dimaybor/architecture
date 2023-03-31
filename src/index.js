@@ -112,7 +112,12 @@ const swiper4 = new Swiper('.certificates-slider', {
 
 var modal = document.getElementById('myModal');
 var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("connection-modal__close")[0]; 
+var btnS = document.getElementById("btnSend");
+var confirmed = document.getElementById("frameConfirmed");
+var frameContent = document.getElementsByClassName("connection-modal__content")[0]; 
+var span = document.getElementsByClassName("connection-modal__close")[0];
+var spanS = document.getElementById("spanConfirmed");
+var buttonBack = document.getElementById("btnBack");
 btn.onclick = function() {
     modal.style.display = "block";
     document.body.classList.add('modal-open');
@@ -120,6 +125,22 @@ btn.onclick = function() {
 span.onclick = function() {
     modal.style.display = "none";
     document.body.classList.remove('modal-open');
+}
+
+buttonBack.onclick = function() {
+  modal.style.display = "none";
+  document.body.classList.remove('modal-open');
+}
+
+btnS.onclick = function() {
+  confirmed.style.display = "block";
+  frameContent.style.display = "none";
+}
+spanS.onclick = function() {
+  modal.style.display = "none";
+  document.body.classList.remove('modal-open');
+  confirmed.style.display = "none";
+  frameContent.style.display = "block";
 }
 window.onclick = function(event) {
     if (event.target == modal) {
