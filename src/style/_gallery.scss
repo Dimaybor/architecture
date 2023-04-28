@@ -5,6 +5,10 @@
     height: 783px;
   }
 
+  & .swiper .general-pagination {
+    top: 45%;
+  }
+
   &-list {
     display: flex;
     flex-wrap: wrap;
